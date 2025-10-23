@@ -30,8 +30,8 @@ function Show(){
           <div ref={bodyref} className=" w-full h-screen flex items-center justify-center">
               <video src="/game.mp4" className='  h-[60%]  md:h-[80%] w-full object-cover' autoPlay playsInline loop muted></video>
                      </div>
-                     <div className=' h-full w-full flex overflow-hidden   items-center absolute justify-center'>
-                <img ref={maskref} src="/mask-logo.svg"className=' object-cover h-[80%] md:h-full w-full  mask-auto absolute scale-400   opacity-0 flex items-center justify-center  ' alt="" />
+                     <div className=' h-full w-full size-60 flex overflow-hidden  mt-10  items-center absolute justify-center'>
+                <img ref={maskref} src="/mask-logo.svg"className=' object-cover h-[80%]  md:h-full w-full  mask-auto absolute scale-400   opacity-0 flex items-center justify-center  ' alt="" />
                 </div>
                 <br />
                 

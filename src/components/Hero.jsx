@@ -17,7 +17,8 @@ function Hero(){
             <div className=" lg:w-[80%] w-full h-full lg:h-[60%] flex items-center justify-center flex-col">
                 <h1 className=" ani opacity-0 text-white text-4xl font-bold">MacBook Pro</h1>
                 <img src="./title.png" className=" ani opacity-0 h-20 lg:h-32" alt="text" />
-                <video src="./hero.mp4" className="  p-0 m-0 " autoPlay muted></video>
+                <video src="./hero.mp4" className="  p-0 m-0 " autoPlay controls={false}  muted
+  playsInline ></video>
             </div>
             
             <div className=' cursor-pointer hover:bg-[#0071E3]/70 transition-all text-center text-white rounded-4xl flex items-center justify-center h-10 w-24 bg-[#0071E3]'>
