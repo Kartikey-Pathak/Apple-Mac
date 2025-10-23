@@ -59,13 +59,13 @@ function Next() {
 
     return (
         <section className=" w-full flex items-center justify-center mt-40 flex-col">
-            <div className=" w-[80%] lg:w-[30%] flex items-center justify-center text-center">
-                <h1 className=" font-bold text-4xl text-white">
+            <div className=" w-[80%] lg:w-[60%] flex items-center justify-center text-center">
+                <h1 className=" font-bold text-4xl lg:text-6xl text-white">
                     Next-level graphics performance.Game on.
                 </h1>
             </div>
             <br />
-            <div ref={boxref} className=" relative opacity-0 mt-32 h-[20rem] lg:h-[40rem] w-full flex items-center overflow-hidden  justify-center mb-20">
+            <div ref={boxref} className=" relative  mt-32 h-[20rem] lg:h-[40rem] w-full flex items-center overflow-hidden  justify-center mb-20">
                 <img src="/laptop.jpg" className=" bg-cover h-[16rem] lg:h-[23rem]" alt="" />
 
                 <img ref={ref1} src="/per1.png" className=" absolute h-[10rem] lg:h-[18rem] top-10 left-4 lg:top-20 lg:left-90 " alt="" />
@@ -76,9 +76,9 @@ function Next() {
 
             </div>
 
-            <div className=' h-[12rem] w-full flex items-center justify-center'>
-                <div className=' w-[40%] flex items-center justify-center text-center'>
-                <h3 className=" font-medium text-gray-400">Run graphics-intensive workflows with a responsiveness that keeps up with your imagination. <span className=' text-white'>The M4 family of chips features a GPU with a second-generation hardware-accelerated ray tracing engine that renders images faster, so gaming feels more immersive and realistic than ever.</span> And Dynamic Caching optimizes fast on-chip memory to dramatically increase average GPU utilization — driving a huge performance boost for the most demanding pro apps and games.</h3>
+            <div className=' h-[20rem] lg:h-[22rem] w-full flex items-center justify-center'>
+                <div className=' w-[90%] lg:w-[40%] flex items-center justify-center text-center'>
+                <h3 className=" lg:text-2xl font-medium text-gray-400">Run graphics-intensive workflows with a responsiveness that keeps up with your imagination. <span className=' text-white'>The M4 family of chips features a GPU with a second-generation hardware-accelerated ray tracing engine that renders images faster, so gaming feels more immersive and realistic than ever.</span> And Dynamic Caching optimizes fast on-chip memory to dramatically increase average GPU utilization — driving a huge performance boost for the most demanding pro apps and games.</h3>
 </div>
             </div>
 

@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger)
 function MacScene() {
     const { scene, cameras, nodes, materials } = useGLTF('./mac.glb')
 
+    
+
     return (
         <>
             <primitive object={scene} position={[0, -5.7, 6]} />
@@ -48,14 +50,18 @@ function Product() {
                 scrub:true,
             }
         })
+         return () => {
+    ScrollTrigger.getAll().forEach(t => t.kill());
+    // optionally dispose three resources if you created any manually
+  }
 },[])
     return (
         <section className=" h-screen">
-            <h1 id='txt' ref={txtref} className=" opacity-0 m-5 text-white font-bold text-4xl">Take A Look.</h1>
+            <h1 id='txt' ref={txtref} className=" opacity-0 m-5 text-white font-bold text-4xl lg:text-6xl">Take A Look.</h1>
             <br />
             <div className=' flex items-center justify-center flex-col'>
             <div ref={modref} className=' opacity-0 h-[25rem] w-[90%] md:h-[30rem] md:w-[80%] flex items-center justify-center'>
-            <Canvas className=' flex items-center h-full w-full justify-center'  camera={{ position: [0, 80, 5], fov: 30 }}>
+            <Canvas dpr={[1, 1.2]} gl={{ powerPreference: "high-performance", antialias: true }} className=' flex items-center h-full w-full justify-center'  camera={{ position: [0, 80, 5], fov: 30 }}>
                 <ambientLight intensity={3} /> 
                 {/* <directionalLight position={[2, -2, 6]} intensity={20} /> */}
                 <pointLight position={[-18.4, -0.97, 14.125]} intensity={200} />
