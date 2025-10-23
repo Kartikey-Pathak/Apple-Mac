@@ -10,6 +10,7 @@ import See from './components/See'
 import High from './components/High'
 import Foot from './components/Foot'
 import Built from './components/Built'
+import Nav2 from './components/Nav2'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <>
     <Nav/>
+    <Nav2/>
     <Hero/>
     <Product/>
     <Show/>
