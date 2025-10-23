@@ -64,10 +64,10 @@ function Product() {
             <Canvas dpr={[1, 1.2]} gl={{ powerPreference: "high-performance", antialias: true }} className=' flex items-center h-full w-full justify-center'  camera={{ position: [0, 80, 5], fov: 30 }}>
                 <ambientLight intensity={3} /> 
                 {/* <directionalLight position={[2, -2, 6]} intensity={20} /> */}
-                <pointLight position={[-18.4, -0.97, 14.125]} intensity={200} />
-                <pointLight position={[0.843872, 6.9712, 10.281]} intensity={200} />
-                <pointLight position={[18.078, 1.0055, 16.72]} intensity={200} />
-                <pointLight position={[-0.2435, 23.175, 10.281]} intensity={200} />
+                <pointLight position={[-18.4, -0.97, 14.125]} intensity={50} />
+                <pointLight position={[0.843872, 6.9712, 10.281]} intensity={50} />
+                <pointLight position={[18.078, 1.0055, 16.72]} intensity={50} />
+                <pointLight position={[-0.2435, 23.175, 10.281]} intensity={50} />
                 <MacScene/>
                 {/* <directionalLight position={[2, 5, -10]} intensity={20} /> */}
                 <OrbitControls enableZoom={false} />
